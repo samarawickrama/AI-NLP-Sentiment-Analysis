@@ -19,7 +19,7 @@ from google.cloud.language import types
 client = language.LanguageServiceClient()
 
 # Sentiment Analysis
-text = strip_punctuation("Red cross is great!")
+text = strip_punctuation("Red Cross is great!")
 document = types.Document(
             content=text,
             type=enums.Document.Type.PLAIN_TEXT)
